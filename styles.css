@@ -44,7 +44,7 @@ header > *:hover, header > *:active {
 }
 
 .logo {
-  font-size: calc(100vw * 0.1);
+  font-size: calc(100vw * 0.2);
   margin: 0;
   line-height: 1;
 }
@@ -54,14 +54,14 @@ header > *:hover, header > *:active {
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black";
   font-style: normal;
   font-weight: 800;
-  font-size: calc(100vw * 0.05);
+  font-size: calc(100vw * 0.075);
 }
 
 .subtitle {
   margin: 0;
   font-style: italic;
   font-weight: 400;
-  font-size: calc(100vw * 0.02);
+  font-size: calc(100vw * 0.035);
 }
 
 main {
