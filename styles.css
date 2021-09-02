@@ -43,9 +43,12 @@ img {
 }
 
 figcaption {
-  font-size: calc(5vw * 0.8);
+  font-size: clamp(12pt, calc(5vw * 0.8), 24pt);
   font-style: italic;
-  padding-top: 0.5em;
+  padding: 1em;
+  background-color: color(srgb 0.565 0.304 0.157);
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
 }
 figcaption a {
   display: initial;
@@ -75,20 +78,20 @@ header {
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
   font-style: normal;
   font-weight: 800;
-  font-size: clamp(1.5em, calc(5vw * 2), 6em);
+  font-size: clamp(1.5em, calc(5vw * 1.75), 4em);
 }
 
 .subtitle {
   margin: 0;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(1em, calc(5vw * 1.25), 3em);
+  font-size: clamp(1em, calc(5vw * 1), 2em);
 }
 
 main {
   min-height: 100vh;
-  padding: 1em;
-  font-size: clamp(1em, calc(5vw * 1.5), 2em);
+  padding: 0.5em;
+  font-size: clamp(1em, calc(5vw * 2), 3em);
 }
 
 nav {
@@ -100,5 +103,5 @@ footer {
 }
 
 .copyright {
-  font-size: clamp(1em, calc(5vw * 0.8), 1.5em);
+  font-size: clamp(1em, calc(5vw * 0.8), 16pt);
 }
