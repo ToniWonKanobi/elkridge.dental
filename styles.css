@@ -9,7 +9,6 @@ body {
   font-family: "Whitney A", "Whitney B";
   font-style: normal;
   font-weight: 300;
-  font-size: 2vw;
   background-color: #906228;
   color: white;
   width: 100%;
@@ -44,7 +43,7 @@ img {
 }
 
 figcaption {
-  font-size: calc(2vw * 0.5);
+  font-size: calc(5vw * 0.8);
   font-style: italic;
   padding-top: 0.5em;
 }
@@ -66,7 +65,7 @@ header {
 }
 
 .logo {
-  font-size: clamp(1em, calc(2vw * 3), 2em);
+  font-size: clamp(2em, calc(5vw * 5), 6em);
   margin: 0;
   line-height: 1;
 }
@@ -76,24 +75,24 @@ header {
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
   font-style: normal;
   font-weight: 800;
-  font-size: clamp(1em, calc(2vw * 2), 2em);
+  font-size: clamp(1.5em, calc(5vw * 2), 6em);
 }
 
 .subtitle {
   margin: 0;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(1em, calc(2vw * 1), 1.5em);
+  font-size: clamp(1em, calc(5vw * 1.25), 3em);
 }
 
 main {
   min-height: 100vh;
   padding: 1em;
-  font-size: clamp(1em, calc(2vw * 1.5), 2em);
+  font-size: clamp(1em, calc(5vw * 1.5), 2em);
 }
 
 nav {
-  font-size: clamp(1em, calc(2vw * 4), 2em);
+  font-size: clamp(2em, calc(5vw * 5), 6em);
 }
 
 footer {
@@ -101,5 +100,5 @@ footer {
 }
 
 .copyright {
-  font-size: clamp(12pt, calc(2vw * 0.8), 20pt);
+  font-size: clamp(1em, calc(5vw * 0.8), 1.5em);
 }
