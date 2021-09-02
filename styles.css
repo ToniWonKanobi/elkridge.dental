@@ -9,7 +9,7 @@ body {
   font-family: "Whitney A", "Whitney B";
   font-style: normal;
   font-weight: 300;
-  font-size: calc(100vw * .01);
+  font-size: 5vw;
   background-color: #906228;
   color: white;
   width: 100%;
@@ -27,13 +27,23 @@ a:hover, a:active {
   text-shadow: 2px 2px 2px #68471d;
 }
 
+figure {
+  margin: 0;
+}
+a > figure {
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
+  margin: auto;
+  display: block;
 }
 
 figcaption {
+  font-size: calc(5vw * 0.5);
   font-style: italic;
-  padding-left: 0.5em;
+  padding-top: 0.5em;
 }
 figcaption a {
   display: initial;
@@ -53,7 +63,7 @@ header {
 }
 
 .logo {
-  font-size: calc(calc(100vw * .01) * 8);
+  font-size: clamp(1em, calc(5vw * 4), 6em);
   margin: 0;
   line-height: 1;
 }
@@ -63,28 +73,24 @@ header {
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
   font-style: normal;
   font-weight: 800;
-  font-size: calc(calc(100vw * .01) * 6);
+  font-size: clamp(1em, calc(5vw * 2), 4em);
 }
 
 .subtitle {
   margin: 0;
   font-style: italic;
   font-weight: 400;
-  font-size: calc(calc(100vw * .01) * 2.5);
+  font-size: clamp(1em, calc(5vw * 1), 2em);
 }
 
 main {
   min-height: 100vh;
   padding: 1em;
-  font-size: calc(100vw * 0.05);
-}
-
-.fourohfourpage {
-  font-size: calc(100vw * .01);
+  font-size: clamp(1em, calc(5vw * 2), 4em);
 }
 
 nav {
-  font-size: calc(calc(100vw * .01) * 8);
+  font-size: clamp(1em, calc(5vw * 4), 6em);
 }
 
 footer {
@@ -92,5 +98,5 @@ footer {
 }
 
 .copyright {
-  font-size: calc(calc(100vw * .01) * .8);
+  font-size: calc(5vw * 0.8);
 }

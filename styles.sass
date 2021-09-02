@@ -1,4 +1,4 @@
-$font-size-base: calc(100vw * .01)
+$font-size-base: 5vw
 
 body
     margin: 0
@@ -27,13 +27,21 @@ a
         transform: translate(-0.01em, -0.01em)
         text-shadow: 2px 2px 2px darken(rgb(144, 98, 40),10%)   
         
+figure
+    margin: 0
+    
+    a > &
+        text-decoration: none
+
 img
     max-width: 100%
+    margin: auto
+    display: block
 
 figcaption
-    // font-size: calc(#{$font-size-base} * .8)
+    font-size: calc(#{$font-size-base} * 0.5)
     font-style: italic
-    padding-left: 0.5em
+    padding-top: 0.5em
     
     a
         display: initial
@@ -50,7 +58,7 @@ header
     text-align: center
     
 .logo
-    font-size: calc(#{$font-size-base} * 8)
+    font-size: clamp(1em, calc(#{$font-size-base} * 4), 6em)
     margin: 0
     line-height: 1
 
@@ -59,29 +67,27 @@ header
     font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
     font-style: normal
     font-weight: 800
-    font-size: calc(#{$font-size-base} * 6)
+    font-size: clamp(1em, calc(#{$font-size-base} * 2), 4em)
 
 .subtitle
     margin: 0
     font-style: italic
     font-weight: 400
-    font-size: calc(#{$font-size-base} * 2.5)
+    font-size: clamp(1em, calc(#{$font-size-base} * 1), 2em)
     
 main
     min-height: 100vh
     padding: 1em
-    font-size: calc(100vw * 0.05)
+    font-size: clamp(1em, calc(#{$font-size-base} * 2), 4em)
     
 .fourohfourpage
-    font-size: $font-size-base
+    // font-size: $font-size-base
     
 nav
-    font-size: calc(#{$font-size-base} * 8)
+    font-size: clamp(1em, calc(#{$font-size-base} * 4), 6em)
     
 footer
     min-height: initial
     
 .copyright
-    font-size: calc(#{$font-size-base} * .8)
-
-    
+    font-size: calc(#{$font-size-base} * 0.8)
