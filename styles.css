@@ -33,6 +33,9 @@ figure {
 a > figure {
   text-decoration: none;
 }
+.fourohfourpage figure {
+  max-width: 480px;
+}
 
 img {
   max-width: 100%;
@@ -98,5 +101,5 @@ footer {
 }
 
 .copyright {
-  font-size: calc(5vw * 0.8);
+  font-size: clamp(12pt, calc(5vw * 0.8), 0.5em);
 }
