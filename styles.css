@@ -88,14 +88,37 @@ header {
   font-size: clamp(1em, calc(5vw * 1), 2em);
 }
 
-main {
+main, nav {
+  width: 800px;
+  max-width: 100%;
+  background-color: #6c4f29;
   min-height: 100vh;
-  padding: 0.5em;
-  font-size: clamp(1em, calc(5vw * 2), 3em);
+  padding: clamp(1em, calc(5vw * 2), 2.25em);
+  box-sizing: border-box;
+  font-size: clamp(1em, calc(5vw * 2), 2em);
 }
 
-nav {
-  font-size: clamp(2em, calc(5vw * 5), 6em);
+h2 {
+  text-align: center;
+  font-family: Hoefler Text;
+  font-size: clamp(1em, calc(5vw * 2), 2.5em);
+  margin-bottom: 0.25em;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+nav p {
+  font-size: clamp(2em, calc(5vw * 5), 2.25em);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-container p {
+  margin: 0.5em;
 }
 
 footer {
@@ -103,5 +126,5 @@ footer {
 }
 
 .copyright {
-  font-size: clamp(1em, calc(5vw * 0.8), 16pt);
+  font-size: 12pt;
 }
