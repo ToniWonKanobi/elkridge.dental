@@ -92,10 +92,16 @@ main, nav {
   width: 800px;
   max-width: 100%;
   background-color: #6c4f29;
-  min-height: 100vh;
   padding: clamp(1em, calc(5vw * 2), 2.25em);
   box-sizing: border-box;
   font-size: clamp(1em, calc(5vw * 2), 2em);
+}
+
+.text-block {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h2 {

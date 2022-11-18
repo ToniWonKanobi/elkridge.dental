@@ -86,10 +86,16 @@ main, nav
     width: 800px
     max-width: 100%
     background-color: rgb(108, 79, 41)
-    min-height: 100vh
+    // min-height: 100vh
     padding: clamp(1em, calc(#{$font-size-base} * 2), 2.25em)
     box-sizing: border-box
     font-size: clamp(1em, calc(#{$font-size-base} * 2), 2em)
+    
+.text-block
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 h2
     text-align: center
