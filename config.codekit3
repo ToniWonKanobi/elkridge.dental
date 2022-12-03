@@ -545,6 +545,45 @@
 		"oAP": "/fonts/836266/F890A8F6EB172AE6F.eot",
 		"oF": 0
 		},
+	"/img/allisonanthony.jpg": {
+		"ft": 16384,
+		"iS": 1590025,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/allisonanthony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/allisonanthonywilson.jpg": {
+		"ft": 16384,
+		"iS": 6907670,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/allisonanthonywilson.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/img/office.jpg": {
+		"ft": 16384,
+		"iS": 1069325,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/office.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,

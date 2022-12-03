@@ -18,13 +18,14 @@ body
 a
     text-decoration: none
     color: inherit
-    transition: all ease-in-out 100ms
+    transition: all ease-out 250ms
     display: block
     
     &:hover,&:active
         color: darken(white,15%)
-        transform: translate(-0.01em, -0.01em)
-        text-shadow: 2px 2px 2px darken(rgb(144, 98, 40),10%)   
+
+        nav &
+            transform: rotate(360deg)
         
 figure
     margin: 0
@@ -37,7 +38,7 @@ figure
 
 img
     max-width: 100%
-    margin: auto
+    // margin: auto
     display: block
 
 figcaption
@@ -46,9 +47,7 @@ figcaption
     padding: 1em
     background-color: color(srgb 0.565 0.304 0.157)
     border-bottom-right-radius: 0.5em
-    border-bottom-left-radius: 0.5em
-    
-    
+    border-bottom-left-radius: 0.5em 
     
     a
         display: initial
@@ -65,42 +64,55 @@ header
     text-align: center
     
 .logo
-    font-size: clamp(2em, calc(#{$font-size-base} * 5), 6em)
+    font-size: clamp(2em, calc(#{$font-size-base} * 4), 5em)
     margin: 0
+    margin-bottom: 0.25em
     line-height: 1
 
-.title
+.title-doctor-names
     margin: 0
     font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
+    font-size: clamp(1.75em, calc(#{$font-size-base} * 1.5), 4em)
+    
+.title-corporate-name
+    margin-top: 0.5em
+    margin-bottom: 0
+    font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
     font-style: normal
-    font-weight: 800
-    font-size: clamp(1.5em, calc(#{$font-size-base} * 1.75), 4em)
+    font-size: clamp(1.5em, calc(#{$font-size-base} * 1), 3em)
 
 .subtitle
     margin: 0
     font-style: italic
     font-weight: 400
-    font-size: clamp(1em, calc(#{$font-size-base} * 1), 2em)
+    font-size: clamp(0.8em, calc(#{$font-size-base} * 0.8), 2em)
     
 main, nav
     width: 800px
     max-width: 100%
     background-color: rgb(108, 79, 41)
-    // min-height: 100vh
     padding: clamp(1em, calc(#{$font-size-base} * 2), 2.25em)
     box-sizing: border-box
     font-size: clamp(1em, calc(#{$font-size-base} * 2), 2em)
     
 .text-block
-    min-height: 100vh
+    height: 110vh
     display: flex
     flex-direction: column
     justify-content: center
-
+    
+hr   
+    border-top: 0.1em solid darken(white,20%)
+    border-radius: 0.25em
+    width: 100%
+    
+    &:first-of-type
+        margin-top: 20vh
+    
 h2
     text-align: center
-    font-family: Hoefler Text
-    font-size: clamp(1em, calc(#{$font-size-base} * 2), 2.5em)
+    font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
+    font-size: clamp(1.2em, calc(#{$font-size-base} * 2), 2.5em)
     margin-bottom: 0.25em
     
 p
@@ -122,4 +134,5 @@ footer
     
 .copyright
     font-size: 12pt
+    text-align: center
     
