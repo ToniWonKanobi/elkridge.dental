@@ -2,7 +2,8 @@
 
 // // Fonts
 $font-size-base: 5vw
-$font-family-base: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
+$font-family-sans: "Whitney A", "Whitney B"
+$font-family-serif: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia"
 
 // // Colors
 
@@ -21,7 +22,7 @@ body
     flex-direction: column
     justify-content: center
     align-items: center
-    font-family: "Whitney A", "Whitney B"
+    font-family: $font-family-serif
     font-style: normal
     font-weight: 300
     background-color: $base-background
@@ -59,14 +60,14 @@ header
 
 .title-doctor-names
     margin: 0
-    font-family: $font-family-base
+    font-family: $font-family-serif
     font-size: clamp(1.75em, calc(#{$font-size-base} * 1.5), 4em)
     line-height: 1.25
     
 .title-corporate-name
     margin: 0
-    margin-top: 0.3em
-    font-family: $font-family-base
+    margin-top: 0.75em
+    font-family: $font-family-serif
     font-style: normal
     font-size: clamp(1.5em, calc(#{$font-size-base} * 1), 3em)
 
@@ -75,6 +76,7 @@ header
     font-style: italic
     font-weight: 400
     font-size: clamp(0.8em, calc(#{$font-size-base} * 0.8), 2em)
+    font-family: $font-family-sans
     
 main, nav
     width: 800px
