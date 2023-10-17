@@ -5,36 +5,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: "Whitney A", "Whitney B";
   font-style: normal;
   font-weight: 300;
-  background-color: #906228;
+  background-color: rgb(160, 98, 40);
   color: white;
   width: 100%;
+}
+
+body, header, nav {
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   transition: all ease-out 250ms;
-  display: block;
-}
-a:hover, a:active {
-  color: #d9d9d9;
-}
-nav a:hover, nav a:active {
-  transform: rotate(360deg);
-}
-
-figure {
-  margin: 0;
-}
-a > figure {
-  text-decoration: none;
-}
-.fourohfourpage figure {
-  max-width: 480px;
 }
 
 img {
@@ -42,25 +28,11 @@ img {
   display: block;
 }
 
-figcaption {
-  font-size: clamp(12pt, calc(5vw * 0.8), 24pt);
-  font-style: italic;
-  padding: 1em;
-  background-color: color(srgb 0.565 0.304 0.157);
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-}
-figcaption a {
-  display: initial;
-  text-decoration: underline;
-}
-
 header, main, nav, footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
 header {
@@ -68,16 +40,18 @@ header {
 }
 
 .logo {
-  font-size: clamp(2em, calc(5vw * 4), 5em);
-  margin: 0;
-  margin-bottom: 0.25em;
-  line-height: 1;
+  width: clamp(100px, 50%, 20vw);
+  margin: 1em;
+  border-radius: 100%;
+}
+.logo .cls-1 {
+  fill: rgb(120, 70, 40);
 }
 
 .title-doctor-names {
   margin: 0;
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
-  font-size: clamp(1.75em, calc(5vw * 1.5), 4em);
+  font-size: clamp(1.75em, 5vw * 1.5, 4em);
   line-height: 1.25;
 }
 
@@ -86,64 +60,104 @@ header {
   margin-top: 0.3em;
   font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
   font-style: normal;
-  font-size: clamp(1.5em, calc(5vw * 1), 3em);
+  font-size: clamp(1.5em, 5vw * 1, 3em);
 }
 
 .subtitle {
   margin: 0;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(0.8em, calc(5vw * 0.8), 2em);
+  font-size: clamp(0.8em, 5vw * 0.8, 2em);
 }
 
 main, nav {
   width: 800px;
   max-width: 100%;
-  background-color: #6c4f29;
-  padding: clamp(1em, calc(5vw * 2), 2.25em);
+  padding: clamp(1em, 5vw * 2, 2.25em);
   box-sizing: border-box;
-  font-size: clamp(1em, calc(5vw * 2), 2em);
+  font-size: clamp(1em, 5vw * 2, 2em);
+}
+
+hr {
+  border-top: 0.15em solid #f2f2f2;
+  border-radius: 0.25em;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .text-block {
-  min-height: 110vh;
+  background-color: rgb(120, 70, 40);
+  border-radius: 1em;
+  padding: 2em;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-hr {
-  border-top: 0.1em solid #cccccc;
-  border-radius: 0.25em;
-  width: 100%;
-  margin: 20vh;
-}
-
 h2 {
   text-align: center;
-  font-family: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "Georgia";
-  font-size: clamp(1.2em, calc(5vw * 2), 2.5em);
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(1.2em, 5vw * 2, 2.5em);
   margin-bottom: 0.25em;
 }
 
-p {
-  margin-bottom: 0.5em;
-}
-nav p {
-  font-size: clamp(2em, calc(5vw * 5), 2.25em);
+.rotating-image {
+  -webkit-animation-name: carousel;
+          animation-name: carousel;
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20em;
 }
 
+@-webkit-keyframes carousel {
+  0%, 100% {
+    background-image: url(/img/dr.allison.jpeg);
+  }
+  33% {
+    background-image: url(/img/dr.anthony.jpeg);
+  }
+  66% {
+    background-image: url(/img/allisonanthonywilson.jpg);
+  }
+}
+
+@keyframes carousel {
+  0%, 100% {
+    background-image: url(/img/dr.allison.jpeg);
+  }
+  33% {
+    background-image: url(/img/dr.anthony.jpeg);
+  }
+  66% {
+    background-image: url(/img/allisonanthonywilson.jpg);
+  }
+}
 .contact-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.contact-container p {
-  margin: 0.5em;
+  flex-direction: column;
+  justify-content: center;
 }
 
-footer {
-  min-height: initial;
+.contact-detail-container {
+  margin-bottom: -1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: clamp(16pt, 5vw * 1, 1em);
+}
+
+.contact-detail-icon {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .copyright {
@@ -153,6 +167,14 @@ footer {
 
 @media (max-width: 400px) {
   header {
-    margin-top: -2em;
+    margin-top: -4em;
+  }
+  main {
+    padding: 1em;
+  }
+  .text-block {
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 5.5vw;
   }
 }
