@@ -11,9 +11,9 @@ $font-family-serif: "Hoefler Text A", "Hoefler Text B", "Hoefler Text Black", "G
 $base-background: rgb(160, 98, 40)
 $accent-background: rgb(120,70,40)
 
-// // //  Winter/Spring Colors
-// $base-background-winter-spring: lighten(rgb(81,89,87),20%)
-// $accent-background-winter-spring: rgb(81,89,87)
+// //  Winter/Spring Colors
+$base-background-winter-spring: lighten(rgb(81,89,87),20%)
+$accent-background-winter-spring: rgb(81,89,87)
 
 body
     margin: 0
@@ -28,6 +28,9 @@ body
     background-color: $base-background
     color: white
     width: 100%
+    
+.winter-spring
+    background-color: $base-background-winter-spring
     
 body,header, nav
     min-height: 100vh
@@ -57,6 +60,9 @@ header
     
     .cls-1
         fill: $accent-background
+        
+        .winter-spring &
+            fill: $accent-background-winter-spring
 
 .title-doctor-names
     margin: 0
@@ -101,6 +107,9 @@ hr
     flex-direction: column
     justify-content: center
     
+    .winter-spring &
+        background-color: $accent-background-winter-spring
+    
 h2
     text-align: center
     font-style: italic
@@ -137,11 +146,9 @@ h2
     margin-bottom: -1em
     display: flex
     flex-direction: row
-    justify-content: center
     font-size: clamp(16pt, calc(#{$font-size-base} * 1), 1em)
     
 .contact-detail-icon
-    margin-left: 1em
     margin-right: 1em
     
 .copyright

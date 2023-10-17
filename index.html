@@ -4,22 +4,23 @@
 	<title>🍁 Maple Leaf Dental 🍁</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/logo.svg" type="image/png">
+	<link rel="mask-icon" href="/img/logo.svg" 
+ color="#804321">
 	<link rel="stylesheet" type="text/css" href="/styles.css">
 	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7099154/7435232/css/fonts.css">
-		<!-- <script>
-			// Create new variable that is today's date
-			var d = new Date;
-			// Extract month from today's date
-			let month = d.getMonth()
-			// Months are zero indexed!
-			if ( month = 11 ) {
-	    		//  block of code to be executed if the condition is true
-				document.body.classList.add("winter-spring-base");
-				// document.getElementsByClassName("text-block").classList.add("winter-spring-accent");
-	    	}
-		</script> -->
 </head>
 <body>
+	<!-- Changing theme based on season -->
+	<!-- (Has to be in <body> and not <head>) -->
+	<script>
+		var d = new Date;
+		let month = d.getMonth()
+		if ( month <=4 || month = 11 ) {
+			document.body.classList.add("winter-spring");
+		}
+	</script>
+	
 	<header>
 		<a href="/">
 			<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576">
@@ -125,10 +126,8 @@
 	  <p class="copyright">
 		<script>
 		  if (new Date().getFullYear()==2021) {
-		    //  block of code to be executed if the condition is true
 		    document.write('Copyright &copy; 2021');
 		  } else { 
-		    //  block of code to be executed if the condition is false
 		    new Date().getFullYear()>2021 && document.write('Copyright &copy; 2021&ndash;' + new Date().getFullYear());
 		  }
 		</script>
