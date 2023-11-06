@@ -118,8 +118,8 @@ h2 {
 .rotating-image {
   -webkit-animation-name: carousel;
           animation-name: carousel;
-  -webkit-animation-duration: 21s;
-          animation-duration: 21s;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
