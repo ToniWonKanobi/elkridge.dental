@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-	<title>🍁 Maple Leaf Dental 🍁</title>
+	<title>Maple Leaf Dental</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="/logo.svg" type="image/png">
@@ -12,11 +12,14 @@
 </head>
 <body>
 	<!-- Changing theme based on season -->
-	<!-- (Has to be in <body> and not <head>) -->
+	<!-- Has to be in <body> and not <head> -->
 	<script>
 		var d = new Date;
 		let month = d.getMonth()
-		if ( month <=4 || month = 11 ) {
+		// This was easier than defining a range function
+		if ( month <=4 ) {
+			document.body.classList.add("winter-spring");
+		} else if ( month = 11 ) {
 			document.body.classList.add("winter-spring");
 		}
 	</script>
@@ -87,40 +90,39 @@
 			<p>The cost of dental care does not have to be burden. We value personal relationships with patients, and offer flexible payment plans.</p>
 		</section>
 		
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<div class="contact-container">
+ 				<a href="https://maps.apple.com/?address=1300%20N%20Lincoln%20St,%20Dixon,%20CA%20%2095620,%20United%20States&auid=4450336579540222245&ll=38.458260,-121.837853&lsp=9902&q=Maple%20Leaf%20Dental&_ext=CjMKBQgEEOIBCgQIBRADCgUIBhCLAQoECAoQAAoECFIQBAoECFUQAAoECFkQBgoFCKQBEAESJik5hrZDFDpDQDE156k6/nVewDm3W9yfOjtDQEFvqE9GQnVewFAE" title="Link to our address on Apple Maps">
+					<div class="contact-detail-container">
+						<p class="contact-detail-icon house">🏠</p>
+						<p class="contact-detail-text">
+							1300 N Lincoln Street<br>
+							Dixon, CA 95620
+						</p>
+					</div>
+				</a>
+				
+				<a href="tel://1-707-678-9296" title="Link to call us">
+					<div class="contact-detail-container">
+						<p class="contact-detail-icon">📱</p>
+						<p class="contact-detail-text">
+							(707) 678-9296
+						</p>
+					</div>
+				</a>
+				
+				<a href="mailto:contact@mapleleaf.dental?subject=I'd%20like%20more%20information%20about%20your%20office" title="Link to email us">
+					<div class="contact-detail-container">
+						<p class="contact-detail-icon">📧</p>
+						<p class="contact-detail-text">
+							contact@mapleleaf.dental
+						</p>
+					</div>
+				</a>	
+			</div>
+		</section>
 	</main>
-	
-	<nav id="contact">
-		<h2>Contact Us</h2>
-		<div class="contact-container">
- 			<a href="https://maps.apple.com/?address=1300%20N%20Lincoln%20St,%20Dixon,%20CA%20%2095620,%20United%20States&auid=4450336579540222245&ll=38.458260,-121.837853&lsp=9902&q=Maple%20Leaf%20Dental&_ext=CjMKBQgEEOIBCgQIBRADCgUIBhCLAQoECAoQAAoECFIQBAoECFUQAAoECFkQBgoFCKQBEAESJik5hrZDFDpDQDE156k6/nVewDm3W9yfOjtDQEFvqE9GQnVewFAE" title="Link to our address on Apple Maps">
-				<div class="contact-detail-container">
-					<p class="contact-detail-icon house">🏠</p>
-					<p class="contact-detail-text">
-						1300 N Lincoln Street<br>
-						Dixon, CA 95620
-					</p>
-				</div>
-			</a>
-			
-			<a href="tel://1-707-678-9296" title="Link to call us">
-				<div class="contact-detail-container">
-					<p class="contact-detail-icon">📱</p>
-					<p class="contact-detail-text">
-						(707) 678-9296
-					</p>
-				</div>
-			</a>
-			
-			<a href="mailto:contact@mapleleaf.dental?subject=I'd%20like%20more%20information%20about%20your%20office" title="Link to email us">
-				<div class="contact-detail-container">
-					<p class="contact-detail-icon">📧</p>
-					<p class="contact-detail-text">
-						contact@mapleleaf.dental
-					</p>
-				</div>
-			</a>	
-		</div>
-	</nav>
 	
 	<footer>
 	  <p class="copyright">

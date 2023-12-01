@@ -78,7 +78,7 @@ header {
   font-family: "Whitney A", "Whitney B";
 }
 
-main, nav {
+main {
   width: 800px;
   max-width: 100%;
   padding: clamp(1em, 5vw * 2, 2.25em);
