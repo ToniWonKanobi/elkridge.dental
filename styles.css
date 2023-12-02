@@ -46,12 +46,11 @@ header {
 .logo {
   width: clamp(100px, 50%, 20vw);
   margin: 1em;
-  border-radius: 100%;
 }
-.logo .cls-1 {
+.logo .logo-background-fill-space-around-leaf {
   fill: rgb(120, 70, 40);
 }
-.winter-spring .logo .cls-1 {
+.winter-spring .logo .logo-background-fill-space-around-leaf {
   fill: rgb(81, 89, 87);
 }
 
