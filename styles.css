@@ -115,42 +115,11 @@ h2 {
 }
 
 .rotating-image {
-  -webkit-animation-name: carousel;
-          animation-name: carousel;
-  -webkit-animation-duration: 30s;
-          animation-duration: 30s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  background-repeat: no-repeat;
+  background-image: url(/img/family.jpeg);
   background-size: cover;
   height: 20em;
 }
 
-@-webkit-keyframes carousel {
-  0%, 100% {
-    background-image: url(/img/dr.allison.jpeg);
-  }
-  33% {
-    background-image: url(/img/dr.anthony.jpeg);
-  }
-  66% {
-    background-image: url(/img/allisonanthonywilson.jpg);
-  }
-}
-
-@keyframes carousel {
-  0%, 100% {
-    background-image: url(/img/dr.allison.jpeg);
-  }
-  33% {
-    background-image: url(/img/dr.anthony.jpeg);
-  }
-  66% {
-    background-image: url(/img/allisonanthonywilson.jpg);
-  }
-}
 .contact-container {
   display: flex;
   flex-direction: column;

@@ -646,25 +646,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/dr.allison.jpeg" : {
+    "\/img\/family.jpeg" : {
       "ft" : 16384,
-      "iS" : 334701,
+      "iS" : 1101628,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/dr.allison.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/dr.anthony.jpeg" : {
-      "ft" : 16384,
-      "iS" : 328934,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/dr.anthony.jpg",
+      "oAP" : "\/img\/family.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
