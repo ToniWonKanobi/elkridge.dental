@@ -1,2 +1,2 @@
-# mapleleaf.dental
-Repository for professional website for Maple Leaf Dental, Inc.
+# elkridge.dental
+Repository for professional website for Craig Family Dental, LLC dba Elk Ridge Dental
